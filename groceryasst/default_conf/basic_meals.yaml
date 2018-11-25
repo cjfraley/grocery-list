@@ -1,0 +1,25 @@
+sandwich:
+  type: lunch
+  ingredients:
+    - name: bread
+      category: baked
+      quantity: 2
+      unit: slices
+    - name: lunch meat
+      category: protein
+      quantity: 3
+      unit: slices
+egg:
+  type: breakfast
+  ingredients:
+    - name: egg
+      category: dairy
+      quantity: 1
+      unit: egg
+steak:
+  type: dinner
+  ingredients:
+    - name: steak
+      category: protein
+      quantity: 1
+      unit: lb
