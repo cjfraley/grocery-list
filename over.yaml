@@ -1,0 +1,44 @@
+AWSTemplateFormatVersion: 2010-09-09
+Resources:
+
+  RestApi:
+    Type: 'AWS::ApiGateway::RestApi'
+    Properties: {}
+    Metadata:
+      'AWS::CloudFormation::Designer':
+        id: 63494313-7ba1-4eee-90cd-5768e78de438
+  AGM3GDQZ:
+    Type: 'AWS::ApiGateway::Method'
+    Properties:
+      RestApiId: !Ref AGRA1HUS2
+    Metadata:
+      'AWS::CloudFormation::Designer':
+        id: 2c373ae2-3adf-44b1-91ea-b1e94a40eea0
+  Function:
+    Type: 'AWS::Lambda::Function'
+    Properties: {}
+    Metadata:
+      'AWS::CloudFormation::Designer':
+        id: aae4f903-abb6-4bc9-b3a9-fbad4037cb52
+  LV8SAM:
+    Type: 'AWS::Lambda::Version'
+    Properties:
+      FunctionName: !Ref LF3VYPS
+  LA10K8A:
+    Type: 'AWS::Lambda::Alias'
+    Properties:
+      FunctionName: !Ref LF3VYPS
+      FunctionVersion: !Ref LV8SAM
+  IAMR27322:
+    Type: 'AWS::IAM::Role'
+    Properties: {}
+    DependsOn:
+      - IAMG52D0K
+  IAMG52D0K:
+    Type: 'AWS::IAM::Group'
+    Properties:
+      ManagedPolicyArns:
+        - !Ref IAMMP1NWIT
+  IAMMP1NWIT:
+    Type: 'AWS::IAM::ManagedPolicy'
+    Properties: {}

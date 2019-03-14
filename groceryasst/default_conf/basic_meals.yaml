@@ -23,3 +23,10 @@ steak:
       category: protein
       quantity: 1
       unit: lb
+ice_cream:
+  type: dessert
+  ingredients:
+    - name: Ice Cream
+      category: dairy
+      quantity: 5
+      unit: oz
